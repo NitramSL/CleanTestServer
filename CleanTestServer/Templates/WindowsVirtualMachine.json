@@ -53,7 +53,7 @@
     "vnetId": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetId'), '/subnets/', variables('subnetName'))]",
     "addressPrefix": "10.0.0.0/16",
-    "subnetName": "Subnet",
+    "subnetName": "msdev-sub001",
     "subnetPrefix": "10.0.0.0/24",
     "vhdStorageType": "Standard_LRS",
     "vhdStorageContainerName": "vhds",
