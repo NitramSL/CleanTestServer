@@ -57,7 +57,7 @@
     "subnetPrefix": "10.1.0.0/24",
     "vhdStorageType": "Standard_LRS",
     "vhdStorageContainerName": "vhds",
-    "vhdStorageName": "msdevsastdlrs",
+    "vhdStorageName": "msdevsatemplate",
     "diagnosticsStorageAccountName": "[variables('vhdStorageName')]",
     "diagnosticsStorageAccountResourceGroup": "[resourcegroup().name]",
     "accountid": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', variables('diagnosticsStorageAccountResourceGroup'), '/providers/', 'Microsoft.Storage/storageAccounts/', variables('diagnosticsStorageAccountName'))]",
