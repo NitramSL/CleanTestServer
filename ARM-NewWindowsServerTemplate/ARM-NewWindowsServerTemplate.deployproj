@@ -34,8 +34,8 @@
       <Visible>False</Visible>
     </None>
     <Content Include="Scripts\Deploy-AzureResourceGroup.ps1" />
-    <Content Include="Templates\WindowsVirtualMachine.json" />
-    <Content Include="Templates\WindowsVirtualMachine.parameters.json" />
+    <Content Include="Templates\ARM-NewWindowsServerTemplate.json" />
+    <Content Include="Templates\ARM-NewWindowsServerTemplate.parameters.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Tools\AzCopy.exe" />
