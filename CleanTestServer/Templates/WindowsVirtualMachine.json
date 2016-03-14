@@ -4,7 +4,8 @@
   "parameters": {
     "vmName": {
       "type": "string",
-      "minLength": 1
+      "minLength": 1,
+      "maxLength": 15
     },
     "adminUsername": {
       "type": "string",
@@ -40,17 +41,17 @@
     }
   },
   "variables": {
-    "vmName": "(parameters('vmName')",
+    "vmName": "[parameters('vmName')]",
     "vmSize": "Standard_A1",
+    "imagePublisher": "MicrosoftWindowsServer",
+    "imageOffer": "WindowsServer",
     "OSDiskName": "[concat(variables('vmName'),'-vhd-os')]",
     "nicName": "[concat(variables('vmName'),'-nic')]",
     "publicIPAddressName": "[concat(variables('vmName'),'-pip')]",
     "publicIPAddressType": "Dynamic",
-    "virtualNetworkName": "MyVNET",
+    "virtualNetworkName": "msdev-vn",
     "vnetId": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetId'), '/subnets/', variables('subnetName'))]",
-    "imagePublisher": "MicrosoftWindowsServer",
-    "imageOffer": "WindowsServer",
     "addressPrefix": "10.0.0.0/16",
     "subnetName": "Subnet",
     "subnetPrefix": "10.0.0.0/24",
