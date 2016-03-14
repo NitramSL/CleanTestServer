@@ -6,10 +6,10 @@
       "value": "msdev-vmwapp001"
     },
     "adminUsername": {
-      "value": null
+      "value": "makor"
     },
     "dnsNameForPublicIP": {
-      "value": null
+      "value": "msdev-vmwapp001"
     }
   }
 }
